@@ -9,14 +9,14 @@ size = 50;
 % intervalo [a, b] com a fórmula r = a + (b-a).*rand(N,1)
 a = 1; % Valor inicial do intervalo
 b = 20; % Valor final do intervalo
-values = 1 + (b-a).*rand(size, 2);
+values = a + (b-a).*rand(size, 2);
 
 % Número de clusters = 3
 
 % Posicionamento aleatório inicial dos centróides de cada cluster
-c1 = 1 + (b-a).*rand(1, 2);
-c2 = 1 + (b-a).*rand(1, 2);
-c3 = 1 + (b-a).*rand(1, 2);
+c1 = a + (b-a).*rand(1, 2);
+c2 = a + (b-a).*rand(1, 2);
+c3 = a + (b-a).*rand(1, 2);
 
 % Plotando os pontos antes de iniciar o algoritmo
 figure;
